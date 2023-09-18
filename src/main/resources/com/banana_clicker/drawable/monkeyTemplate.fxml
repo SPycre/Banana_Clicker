@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Button fx:id="monkeyButton" onAction="#monkeyClick" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.banana_clicker.views.templates.MonkeyTemplate">
+            <graphic>
+                <GridPane>
+                    <Label fx:id="monkeyName" alignment="CENTER" text="NAME" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <font>
+               <Font size="42.0" />
+            </font></Label>
+                    <Label fx:id="monkeyPrice" alignment="CENTER" text="PRICE" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <font>
+               <Font size="28.0" />
+            </font></Label>
+                    <Label fx:id="monkeyCount" alignment="CENTER" text="COUNT" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <font>
+               <Font size="29.0" />
+            </font></Label>
+                     <columnConstraints>
+                        <ColumnConstraints percentWidth="80" />
+                         <ColumnConstraints percentWidth="20" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints percentHeight="60" />
+                         <RowConstraints percentHeight="40" />
+                     </rowConstraints>
+                </GridPane>
+            </graphic>
+</Button>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Button fx:id="upgradeButton" onAction="#upgradeClick" mnemonicParsing="false" prefHeight="101.0" prefWidth="347.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.banana_clicker.views.templates.UpgradeTemplate">
+   <graphic>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints percentWidth="100" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints percentHeight="70" />
+          <RowConstraints percentHeight="30" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="upgradeName" text="Name" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="upgradePrice" text="Price" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </graphic>
+</Button>
